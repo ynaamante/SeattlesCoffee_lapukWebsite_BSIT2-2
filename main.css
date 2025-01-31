@@ -794,12 +794,12 @@ h2 {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 600px;  /* Set width to 600px */
-  height: 699.63px; /* Set height to 699.63px */
-  overflow-y: auto; /* Enable scrolling within the form if content overflows */
+  width: 600px;  
+  height: 699.63px; 
+  overflow-y: auto; 
   animation: fadeIn 1s ease-out;
-  margin: 20px auto; /* Center the form horizontally */
-  box-sizing: border-box; /* Include padding in width calculations */
+  margin: 20px auto; 
+  box-sizing: border-box; 
 }
 
 /* Form elements */
