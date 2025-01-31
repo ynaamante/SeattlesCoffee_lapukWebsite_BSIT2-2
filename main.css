@@ -794,12 +794,12 @@ h2 {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 600px;  
-  height: 699.63px; 
-  overflow-y: auto; 
+  width: 600px;  /* Set width to 600px */
+  height: 699.63px; /* Set height to 699.63px */
+  overflow-y: auto; /* Enable scrolling within the form if content overflows */
   animation: fadeIn 1s ease-out;
-  margin: 20px auto; 
-  box-sizing: border-box; 
+  margin: 20px auto; /* Center the form horizontally */
+  box-sizing: border-box; /* Include padding in width calculations */
 }
 
 /* Form elements */
@@ -1111,4 +1111,28 @@ footer .footer__copyright {
     grid-template-columns: 2fr 1fr 1fr 1fr;
     justify-items: center;
   }
+  @media screen and (max-width: 768px) {
+    .home__wrapper {
+      flex-direction: column; 
+    }
+  
+    .nav_list {
+      flex-direction: column; 
+    }
+  
+    .plans-container {
+      flex-direction: column;
+    }
+  
+    .plan {
+      width: 100%; 
+      margin-bottom: 20px; 
+    }
+  
+    .video__gradient {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
 }
