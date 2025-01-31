@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEATTLE COFFEE</title>
+   
+    <link rel="shortcut icon" href="images/seattles.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    
+  <header id="header" class="header"> 
+    <nav class="nav container">
+      <a href="index.html" class="nav__brand">
+        SEATTLE<span> COFFEE</span>
+      </a>
+      <div class="nav_menu" id="nav_menu">
+        <ul class="nav_list">
+          <li class="nav_item">
+            <a href="#home" class="nav_link nav_link--active">Home</a>
+          </li>
+          <li class="nav_item">
+            <a href="#gallery" class="nav_link">Gallery</a>
+          </li>
+          <li class="nav_item">
+            <a href="#about-us" class="nav_link">About Us</a>
+          </li>
+          <li class="nav_item">
+            <a href="#services" class="nav_link">Services</a>
+          </li>
+          <li class="nav_item">
+            <a href="#forms" class="nav_link">Forms</a>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+   
+<main class="main">
+  <section id="home" class="home">
+    <div class="d-grid home__wrapper container">
+      <div class="home__content">
+        <h1 class="home__title">Come and see <span>Seattle's Coffee</span>...!</h1>
+        <p class="home__description">
+          Discover the rich, bold flavors of Seattle's finest coffee, crafted with passion and served fresh daily. From single-origin beans to expertly brewed blends, we bring the heart of Seattle’s coffee culture to your cup.
+        </p>
+        <a href="#services" class="btn btn--primary">Services</a>
+      </div>
+      <img src="images/coffee3.png" alt="" class="home_img">
+    </div>
+  </section>
+<section id="gallery" class="gallery section">
+  <div class="section__header">
+    <span class="section__subtitle">Coffee</span>
+    <h2 class="section__title">Most Popular</h2>
+  </div>
+  <div class="coffee__wrapper">
+    <div class="coffee__item" onclick="toggleRadius(this)">
+      <img src="images/MATCHA-GREEN-TEA-JAVAKULA-300x300.png" alt="" class="coffee__img">
+      <div class="coffee__info">
+        <p class="coffee__name">Match Green Tea Javakula</p>
+        <h3 class="coffee__amount">240PHP</h3>
+      </div>
+    </div>
+    <div class="coffee__item" onclick="toggleRadius(this)">
+      <img src="images/Vanilla-Milkshake-300x300.png" alt="" class="coffee__img">
+      <div class="coffee__info">
+        <p class="coffee__name">Vanilla Milkshake</p>
+        <h3 class="coffee__amount">220PHP</h3>
+      </div>
+    </div>
+    <div class="coffee__item" onclick="toggleRadius(this)">
+      <img src="images/Strawberry-Honey-Kiss-300x300.png" alt="" class="coffee__img">
+      <div class="coffee__info">
+        <p class="coffee__name">Strawberry Honey Kiss</p>
+        <h3 class="coffee__amount">250PHP</h3>
+      </div>
+    </div>
+    <div class="coffee__item" onclick="toggleRadius(this)">
+      <img src="images/Raspberry-Javanilla--300x300.png" alt="" class="coffee__img">
+      <div class="coffee__info">
+        <p class="coffee__name">Raspberry Javanilla</p>
+        <h3 class="coffee__amount">245PHP</h3>
+      </div>
+    </div>
+    <div class="coffee__item" onclick="toggleRadius(this)">
+      <img src="images/Cookie-Javanilla--300x300-.png" alt="" class="coffee__img">
+      <div class="coffee__info">
+        <p class="coffee__name">Cookie Javanilla</p>
+        <h3 class="coffee__amount">230PHP</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+  <section class="video section">
+    <div class="section__header">
+      <span class="section__subtitle">Ads</span>
+      <h2 class="section__title">Seattle’s Coffee</h2>
+    </div>
+    <div class="video__gradient">
+      <div class="video__wrapper container">
+        <video id="video-tour" class="video__tour" controls>
+          <source src="video/Lingo by Seattle Coffee Company.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="about-us" class="about-us section">
+    <div class="about__overlay">
+      <h1>ABOUT US</h1>
+    </div>
+  </section>
+  
+  <div class="about__wrapper-container">
+    <div class="about__wrapper">
+      <!-- Company Description -->
+      <div class="about__content">
+        <h2>Our Company</h2>
+        <p>
+          Welcome to our company, a forward-thinking organization dedicated to innovation and excellence. We strive to deliver exceptional services and solutions that meet the evolving needs of our clients and community. Our mission is to empower businesses and individuals through cutting-edge technology, creative problem-solving, and unwavering commitment to quality.
+        </p>
+      </div>
+  
+      <!-- Founders Section -->
+      <div class="team-section">
+        <h2>Our Founders</h2>
+        <div class="team">
+          <div class="team__member">
+            <img src="images/yna.png" alt="Ms. Yna Vivienne C. Amante" class="team__image">
+            <p><strong>Ms. Yna Vivienne C. Amante</strong><br>Founder</p>
+          </div>
+          <div class="team__member">
+            <img src="images/hannah (2).jpg" alt="Hannah Kate DC. Gragasin" class="team__image">
+            <p><strong>Hannah Kate DC. Gragasin</strong><br>Co-Founder</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Developers Section -->
+      <div class="team-section">
+        <h2>Our Developer Team</h2>
+        <div class="team">
+          <div class="team__member">
+            <img src="images/lexis.jpg" alt="Ms. Alexis Gregorio" class="team__image">
+            <p><strong>Ms. Alexis Gregorio</strong><br>Developer</p>
+          </div>
+          <div class="team__member">
+            <img src="images/casey.jpg" alt="Mr. Ferdinand Casey Santiago" class="team__image">
+            <p><strong>Mr. Ferdinand Casey Santiago</strong><br>Developer</p>
+          </div>
+          <div class="team__member">
+            <img src="images/ced.jpg" alt="Mr. Cedric James Ressureccion" class="team__image">
+            <p><strong>Mr. Cedric James Ressureccion</strong><br>Developer</p>
+          </div>
+          <div class="team__member">
+            <img src="images/khenrei.jpg" alt="Mr. Carl Khenrei Santos" class="team__image">
+            <p><strong>Mr. Carl Khenrei Santos</strong><br>Developer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <section id="services" class="services section">
+    <div class="section__header">
+      <span class="section__subtitle">Services</span>
+    <div class="plans-container">
+      <div class="plans-container">
+        <div class="plans-container">
+          <!-- Card 1: Promo Coffee -->
+          <div class="plan">
+            <div class="inner">
+              <span class="pricing">
+                <span>
+                  10%<small>/ m</small>
+                </span>
+              </span>
+              <p class="title">Promo Coffee</p>
+              <p class="info">Get exclusive promotions, discounts, and seasonal offers directly to your inbox. Don't miss out on amazing deals!</p>
+              <ul class="features">
+                <li>
+                  <span class="icon">
+                    <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+                    </svg>
+                  </span>
+                  <span>Exclusive <strong>discounts</strong></span>
+                </li>
+                <li>
+                  <span class="icon">
+                    <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+                    </svg>
+                  </span>
+                  <span>Seasonal <strong>offers</strong></span>
+                </li>
+                <li>
+                  <span class="icon">
+                    <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+                    </svg>
+                  </span>
+                  <span>Get <strong>free trials</strong></span>
+                </li>
+              </ul>
+              <div class="action">
+                <a class="button" href="#">Order now</a>
+              </div>
+            </div>
+          </div>
+        
+          <!-- Card 2: Franchise Our Coffee Shop -->
+          <div class="plan">
+            <div class="inner">
+              <span class="pricing">
+                <span>
+                  11K PHP <small>/ m</small>
+                </span>
+              </span>
+              <p class="title">Franchise Our Coffee Shop</p>
+              <p class="info">Join our coffee empire and get exclusive access to our franchise package. Grow your business with us.</p>
+              <ul class="features">
+                <li>
+                  <span class="icon">
+                    <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+                    </svg>
+                  </span>
+                  <span>Open a <strong>franchise</strong> store</span>
+                </li>
+                <li>
+                  <span class="icon">
+                    <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+                    </svg>
+                  </span>
+                  <span>Access to <strong>training</strong> materials</span>
+                </li>
+                <li>
+                  <span class="icon">
+                    <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+                    </svg>
+                  </span>
+                  <span>Complete <strong>support</strong> system</span>
+                </li>
+              </ul>
+              <div class="action">
+                <a class="button" href="#">Franchise with us</a>
+              </div>
+            </div>
+          </div>
+        
+          <!-- Card 3: Subscribe to Our Coffee Shop -->
+          <div class="plan">
+            <div class="inner">
+              <span class="pricing">
+                <span>
+                  120php <small>/ m</small>
+                </span>
+              </span>
+              <p class="title">Subscribe to Our Coffee Shop</p>
+              <p class="info">Never run out of coffee! Get a subscription for premium beans, ground coffee, and special coffee deliveries.</p>
+              <ul class="features">
+                <li>
+                  <span class="icon">
+                    <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+                    </svg>
+                  </span>
+                  <span>Choose <strong>delivery frequency</strong></span>
+                </li>
+                <li>
+                  <span class="icon">
+                    <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+                    </svg>
+                  </span>
+                  <span>Enjoy <strong>exclusive coffee blends</strong></span>
+                </li>
+                <li>
+                  <span class="icon">
+                    <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+                    </svg>
+                  </span>
+                  <span>Free <strong>shipping</strong> on all orders</span>
+                </li>
+              </ul>
+              <div class="action">
+                <a class="button" href="#">Subscribe Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <section id="forms" class="forms section">
+          <h2>Order Here</h2>
+        <form class="order-form" action="/submit-order" method="POST">
+          
+          
+          <label for="coffee-type">Select Coffee Type:</label>
+          <select id="coffee-type" name="coffee-type" required>
+            <option value="espresso">Match Green Tea Javakula</option>
+            <option value="latte">Vanilla Milkshake</option>
+            <option value="cappuccino">Strawberry Honey Kiss/option>
+            <option value="americano">Raspberry Javanilla</option>
+            <option value="mocha">Cookie Javanilla</option>
+          </select>
+        
+          <label for="size">Select Size:</label>
+          <select id="size" name="size" required>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
+        
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" name="quantity" value="1" min="1" required>
+        
+          <fieldset class="add-ons">
+            <legend>Choose Add-ons (Optional)</legend>
+            <label for="milk">Milk Type:</label>
+            <select id="milk" name="milk">
+              <option value="whole">Whole Milk</option>
+              <option value="skim">Skim Milk</option>
+              <option value="soy">Soy Milk</option>
+              <option value="almond">Almond Milk</option>
+              <option value="none">No Milk</option>
+            </select>
+            
+            <label for="flavor">Flavor Shot:</label>
+            <select id="flavor" name="flavor">
+              <option value="vanilla">Vanilla</option>
+              <option value="caramel">Strawberry</option>
+              <option value="hazelnut">Matcha</option>
+              <option value="chocolate">Chocolate</option>
+              <option value="chocolate">Raspberry</option>
+              <option value="chocolate">Caramel</option>
+              <option value="none">None</option>
+            </select>
+        
+            <label for="extra-shot">Extra Shot of Espresso:</label>
+            <input type="checkbox" id="extra-shot" name="extra-shot" value="yes">
+          </fieldset>
+        
+          <label for="notes">Special Instructions (Optional):</label>
+          <textarea id="notes" name="notes" rows="4" placeholder="Let us know if you have any special requests or allergies."></textarea>
+        
+          <button type="submit">Place Order</button>
+        </form>
+      </main>
+
+ <!-- Footer -->
+<footer class="footer">
+  <div class="d-grid footer__wrapper container">
+    <div class="footer__content">
+      <h3 class="footer__brand">
+        SEATTLE'S <span> COFFEE</span>
+      </h3>
+      <p class="footer__description">
+        Experience the essence of Seattle's coffee culture. 
+        Stay connected and never miss out on our latest brews and exclusive offers.
+      </p>
+
+      <!-- Social Media Icons -->
+      <div class="footer__social">
+        <a href="https://www.facebook.com/share/18kexVKE3u/" class="social-icon"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/seattlesbestcoffee?igsh=aG85dzEyOWNiOHBl" class="social-icon"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <div class="footer__content">
+      <h4 class="footer__title">Quick Links</h4>
+      <ul class="footer__list">
+        <li class="footer__item"><a href="#" class="footer__link">FAQs</a></li>
+        <li class="footer__item"><a href="#" class="footer__link">Privacy Policy</a></li>
+        <li class="footer__item"><a href="#" class="footer__link">Customer Service</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__content">
+      <h4 class="footer__title">Responsibility</h4>
+      <ul class="footer__list">
+        <li class="footer__item"><a href="#" class="footer__link">Diversity</a></li>
+        <li class="footer__item"><a href="#" class="footer__link">Community</a></li>
+        <li class="footer__item"><a href="#" class="footer__link">Ethical Sourcing</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__content">
+      <h4 class="footer__title">Support Us</h4>
+      <ul class="footer__list">
+        <li class="footer__item"><a href="#" class="footer__link">Terms & Conditions</a></li>
+        <li class="footer__item"><a href="#" class="footer__link">Customer Privacy</a></li>
+        <li class="footer__item"><a href="#" class="footer__link">Customer Landline</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <p class="footer__copyright container">
+    Copyright ©SEATTLE'S </span> COFFEE </span> 2025. All Rights Reserved
+  </p>
+</footer>
+
+</body>
+</html>
